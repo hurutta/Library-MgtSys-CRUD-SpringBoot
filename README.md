@@ -121,15 +121,22 @@ Referring <a href="#usage3">Features</a> section for a chart of all working API'
     Sample JSON for this request:
      ```
       {
-          "name": "1",
-          "genre": "Roronoa",
-          "writer": "Zoro",
+          "name": "The Fish",
+          "genre": "Fiction",
+          "writer": "Mr. Cat",
           "publishYear": 1999,
           "price": 20.50
       }
       ```
     * **DELETE:** http://localhost:8080/remove/{id} : Delete a book by it's id
     * **PUT:** http://localhost:8080/update/{id} : Update book by it's id
+    Sample JSON for this request:
+     ```
+      {
+          "genre": "Thriller",
+          "price": 18.25
+      }
+      ```
     * **GET:** http://localhost:8080/all/ : Get a list of all book
     * **GET:** http://localhost:8080/price/{from}/{to} : Get a list of books price range between `from` to `to`
  
